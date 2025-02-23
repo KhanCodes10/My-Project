@@ -1,0 +1,113 @@
+/* Reset some styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #080808f0;
+}
+
+
+h1 {color: #ffffff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.car-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.car {
+    background-color: rgb(85, 82, 82);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.car:hover {
+    transform: scale(1.05);
+}
+
+.car img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.car h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.price {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: rgb(226, 20, 20);
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+#car-details h2 {
+    text-align: center;
+}
+
+#car-details p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .car-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .car-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+.imagesize{
+width:1600px;
+height:400px;
+}
