@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Car Website</title>
+    <link rel="stylesheet" href="auto.css">
+</head>
+<body>
+    <header>
+        <img class="imagesize"src="prs.jpg" alt="Car 1"><h1>---  Car Gallery --- </h1>
+    </header>
+
+    <section class="car-gallery">
+        
+        <div class="car" onclick="openModal('car2')">
+            <a href="hrv.html"><img src="HRV/HRV.MAIN.png" alt="Car 2"></img></a>
+            <h2>HONDA-HRV</h2>
+            <p class="price">Price: ₨ 7,600,000</p>
+            
+        </div> <div class="car" onclick="openModal('car2')">
+            <br>
+            <br>
+            <a href="civicrs.html"><img src="civic.pmg.avif" alt="Car 4"></img></a>
+            <br>
+            <br>
+            <h2>HONDA CIVIC-RS</h2>
+            <p class="price">Price: ₨ 5,049,000</p>
+        </div> 
+                <div class="car" onclick="openModal('car2')">
+                    <br>
+                    <br>
+                    <a href="accord.html"><img src="ACCORD/ACORD.png" alt="Car 5"></a>
+                    <br>
+                    <br>
+                    <h2>HONDA ACCORD</h2>
+                    <p class="price">Price: ₨ 8,000,000</p>
+                </div>
+                    
+                    <!-- Suzuki Swift -->
+                    <div class="car" onclick="openModal('car2')">
+                        <a href="swift.html"><img src="swiftsport.webp" alt="Suzuki Swift"></a>
+                        <br>
+                        <h2>SUZUKI SWIFT</h2>
+                        <p class="price">Price: ₨ 2,500,000</p>
+                    </div>
+                
+                    <!-- Suzuki Alto -->
+                    <div class="car" onclick="openModal('car2')">
+                        <a href="alto.html"><img src="Alto/alto5.jpg" alt="Suzuki Alto"></a>
+                        <h2>SUZUKI ALTO</h2>
+                        <p class="price">Price: ₨ 1,800,000</p>
+                    </div>
+                
+                   
+                    <!-- Suzuki Wagon R -->
+                    <div class="car" onclick="openModal('car2')">
+                        <a href="wagonr.html"><img src="WAGONR/wagon5t.jpg" alt="Suzuki Wagon R"></a>
+                        <h2>SUZUKI WAGON R</h2>
+                        <p class="price">Price: ₨ 2,200,000</p>
+                    </div>
+                
+                   
+                
+                    
+                <!-- Add more cars as needed -->
+            
+            
+                        <div class="car" onclick="openModal('car1')">
+                            <a href="fordranger.html"><img src="ranger2.png" alt="Car 2"></a>
+                            <h2>FORD RANGER</h2>
+                            <p class="price">Price: ₨ 19,000,000</p></div> 
+                            
+                            <div class="car" onclick="openModal('car1')">
+                             <br>
+                             <br>
+                                <a href="fordshelby.html"><img src="shelbyblue.png" alt="Car 2"></img></a>
+                                <br>
+                                <br>
+                                <h2>FORD RAPTOR F-150 SHELBY</h2>
+                                <p class="price">Price: ₨ 30,720,000</p></div>
+                                
+                                <div class="car" onclick="openModal('car1')">
+                                    <a href="ford.html"> <img src="ford150.avif" alt="Car 2"></img></a>
+                                    <h2>FORD 150 RAPTOR</h2>
+                                    <p class="price">Price: ₨ 2,000,000</p></div>
+                                    
+                                    <div class="car" onclick="openModal('car1')">
+           <a href="fordmustang.html"> <img src="mustang/MUSTANG.avif" alt="Car 2"></img></a>
+            <h2>FORD MUSTANG GT</h2>
+            <p class="price">Price: ₨ 3,750,000</p>
+        </div>
+        <div class="car" onclick="openModal('car1')">
+            <a href="mustangdark.html"><img src="mustangdark/DARK.avif" alt="Car 2"><img></a>
+            <h2>MUSTANG DARK-HORSE</h2>
+            <p class="price">Price: ₨ 2,000,000</p></div>
+            
+        <!-- Add more cars as needed -->
+    
+
+    <!-- Modal Popup for Car Details -->
+    <div id="car-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="car-details">
+                <!-- Car details will be loaded dynamically -->
+            </div>
+        </div>
+    </div></section>
+
+    <script src="script.js"></script>
+</body>
+</html>
